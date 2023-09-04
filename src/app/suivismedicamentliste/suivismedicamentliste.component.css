@@ -1,0 +1,26 @@
+.card {
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    margin: 10px; /* Marge extérieure autour des cartes */
+    padding: 15px; /* Espacement interne à l'intérieur des cartes */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    transition: transform 0.2s; /* Transition pour effet de survol */
+  }
+  
+  .card:hover {
+    transform: scale(1.02); /* Effet de survol : légère augmentation de la taille */
+  }
+  
+  /* Styles spécifiques pour le contenu des cartes (titres, paragraphes, etc.) */
+  .card h2 {
+    font-size: 18px; /* Taille de la police pour le titre */
+    margin-bottom: 10px; /* Marge inférieure sous le titre */
+  }
+  
+  .card p {
+    font-size: 14px; /* Taille de la police pour le texte du paragraphe */
+  }
+  
+  .card-body {
+    padding-top: 0; /* Supprime la marge supérieure dans le corps de la carte */
+  }

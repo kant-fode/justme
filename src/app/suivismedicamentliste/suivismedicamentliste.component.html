@@ -1,0 +1,17 @@
+<h1>Suivi de médicaments</h1>
+<div class="container">
+    <div class="card-container">
+      <!-- Utilisation de *ngFor pour créer des cartes pour chaque suivi de médicament -->
+      <div class="card" *ngFor="let suivi of suivisMedicament">
+        <div class="card-header">
+          <h2>{{ suivi.nom }}</h2>
+        </div>
+        <div class="card-body">
+          <p><strong>Dosage :</strong> {{ suivi.dosage }}</p>
+          <p><strong>Fréquence :</strong> {{ suivi.frequence }}</p>
+          <p><strong>Prochaine prise :</strong> {{ suivi.prochainePrise | date:'medium' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
